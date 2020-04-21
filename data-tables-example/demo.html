@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data table colResizable demo</title>  
+
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />    
+  <link rel="stylesheet" type="text/css" href="css/main.css" />  
+  <style>
+      .scroll{
+          overflow:scroll;
+          max-width:100%;
+          position:relative;
+      }
+      body { 
+  font-size: 16px; 
+}
+
+h2 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+table caption {
+	padding: .5em 0;
+}
+
+table.dataTable th,
+table.dataTable td {
+  white-space: nowrap; position: relative;
+  border:1px solid #ccc;
+}
+
+.p {
+  text-align: center;
+  padding-top: 140px;
+  font-size: 14px;
+}
+table.dataTable thead .sorting_asc::after,table.dataTable thead .sorting::after
+{content: "\f160";font-family: FontAwesome;font-size: 14px;font-weight: 400;color: #fff;opacity: 1; right: 5px; position: absolute;}
+table.dataTable thead .sorting_desc::after
+{content: "\f161";font-family: FontAwesome;font-size: 14px;font-weight: 400;color: #fff;opacity: 1; right:5px; position: absolute;}
+table tr:nth-child(even){background-color: #f2f2f2;}
+table tr:hover {background-color: #ddd;}
+.dataTables_filter,.dataTables_length{margin-bottom: 15px;display: table-cell;vertical-align: middle;
+float: none;padding: 10px; }
+.dataTables_info, .dataTables_paginate{margin-top: 15px;}
+.dataTables_paginate a{ display: inline-block; padding: 0 5px;cursor: pointer; }
+  </style>
+ 
+</head>
+<body>
+	
+
+	
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>Table Columns Resizable with Data Tables</h1>
+      <table id="normal" width="100%" border="0" cellpadding="0" cellspacing="0"  class="data-table" summary="This table shows how to create responsive tables using Datatables' extended functionality" class="table table-bordered table-hover dt-responsive">
+        <thead>
+          <tr>
+            <th>Country</th>
+            <th>Languages</th>
+            <th>Population</th>
+            <th>Median Age</th>
+            <th>Area (Km²)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td >Argentina</td>
+            <td>Spanish (official), English, Italian, German, French</td>
+            <td>41,803,125</td>
+            <td>31.3</td>
+            <td>2,780,387</td>
+          </tr>
+          <tr>
+            <td>Australia</td>
+            <td>English 79%, native and other languages</td>
+            <td>23,630,169</td>
+            <td>37.3</td>
+            <td>7,739,983</td>
+          </tr>
+          <tr>
+            <td>Greece</td>
+            <td>Greek 99% (official), English, French</td>
+            <td>11,128,404</td>
+            <td>43.2</td>
+            <td>131,956</td>
+          </tr>
+          <tr>
+            <td>Luxembourg</td>
+            <td>Luxermbourgish (national) French, German (both administrative)</td>
+            <td>536,761</td>
+            <td>39.1</td>
+            <td>2,586</td>
+          </tr>
+          <tr>
+            <td>Russia</td>
+            <td>Russian, others</td>
+            <td>142,467,651</td>
+            <td>38.4</td>
+            <td>17,076,310</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td>Swedish, small Sami- and Finnish-speaking minorities</td>
+            <td>9,631,261</td>
+            <td>41.1</td>
+            <td>449,954</td>
+          </tr>
+           <tr>
+            <td>Luxembourg</td>
+            <td>Luxermbourgish (national) French, German (both administrative)</td>
+            <td>536,761</td>
+            <td>39.1</td>
+            <td>2,586</td>
+          </tr>
+          <tr>
+            <td>Russia</td>
+            <td>Russian, others</td>
+            <td>142,467,651</td>
+            <td>38.4</td>
+            <td>17,076,310</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td>Swedish, small Sami- and Finnish-speaking minorities</td>
+            <td>9,631,261</td>
+            <td>41.1</td>
+            <td>449,954</td>
+          </tr>
+           <tr>
+            <td>Luxembourg</td>
+            <td>Luxermbourgish (national) French, German (both administrative)</td>
+            <td>536,761</td>
+            <td>39.1</td>
+            <td>2,586</td>
+          </tr>
+          <tr>
+            <td>Russia</td>
+            <td>Russian, others</td>
+            <td>142,467,651</td>
+            <td>38.4</td>
+            <td>17,076,310</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td>Swedish, small Sami- and Finnish-speaking minorities</td>
+            <td>9,631,261</td>
+            <td>41.1</td>
+            <td>449,954</td>
+          </tr>
+           <tr>
+            <td>Luxembourg</td>
+            <td>Luxermbourgish (national) French, German (both administrative)</td>
+            <td>536,761</td>
+            <td>39.1</td>
+            <td>2,586</td>
+          </tr>
+          <tr>
+            <td>Russia</td>
+            <td>Russian, others</td>
+            <td>142,467,651</td>
+            <td>38.4</td>
+            <td>17,076,310</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+            <td>Swedish, small Sami- and Finnish-speaking minorities</td>
+            <td>9,631,261</td>
+            <td>41.1</td>
+            <td>449,954</td>
+          </tr>
+        </tbody>
+       
+      </table>
+    </div>
+  </div>
+</div>
+ <script  src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script  src="js/colResizable-1.6.js"></script>  
+  <script  src="js/jquery.dataTables.min.js"></script>
+  <script type="text/javascript">
+$(function(){		
+	$("#normal").colResizable({
+		liveDrag:true, 
+		//gripInnerHtml:"<div class='grip'></div>", 
+		draggingClass:"dragging", 
+		resizeMode:'fit',
+		minWidth:-1
+	});	
+	$('.data-table').DataTable({
+		responsive: true
+	});
+});	
+  </script>
+</body>
+</html>
